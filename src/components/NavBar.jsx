@@ -7,8 +7,13 @@ function NavBar() {
   };
   return (
     <div className="navigation">
-      <div className="nav-logo">
-        <img src={logo} alt="Logo lien accueil" onClick={scrollToTop} />
+      <div>
+        <img
+          src={logo}
+          alt="Logo lien accueil"
+          onClick={scrollToTop}
+          className="nav-logo"
+        />
       </div>
       <div className="nav-links">
         <Link
