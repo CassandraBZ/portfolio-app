@@ -1,11 +1,19 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  color: var(--white);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --black: #272727;
+  --white: #f3f3f3;
+  --accent-color: #d2afe2;
+  --light-background: #685074;
+  --dark-background: #472d54;
+
+  --font-lilita: "Lilita One", cursive;
+  --accent-font: "Praise", cursive;
+
+  background-color: #472d54;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,8 +22,80 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--white);
   text-decoration: inherit;
+  cursor: pointer;
+}
+
+a {
+  position: relative;
+}
+
+a:after {
+  background: var(--accent-color);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+  font-family: var(--font-lilita);
+  font-size: 1.2rem;
+  position: fixed;
+
+  backdrop-filter: blur(12px);
+  width: 100%;
+}
+
+.nav-logo {
+  width: clamp(7rem, 15vw, 8.5rem);
+  margin-left: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding-right: 3rem;
+  height: 100%;
+}
+
+.nav-links > .active {
+  border-bottom: 5px solid var(--accent-color);
+}
+
+.home-section {
+  padding-top: 6.5rem;
 }
