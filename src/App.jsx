@@ -6,11 +6,13 @@ import About from "./components/sections/About";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Contacts from "./components/sections/Contacts";
+import VerticalNavbar from "./components/VerticalNavbar";
 
 function App() {
   return (
     <>
       <NavBar />
+      <VerticalNavbar />
       <Element name="section1" className="element">
         <Home />
       </Element>
