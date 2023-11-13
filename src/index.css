@@ -69,6 +69,13 @@ h2 {
   padding: 0;
 }
 
+h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -143,9 +150,56 @@ h2 {
   padding: 1rem;
   position: fixed;
   margin-left: 1rem;
-  margin-top: 9rem;
+  margin-top: 12rem;
 }
 
 .arrows {
   width: 1rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 4rem 4rem 8rem;
+}
+
+.about-description {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border: 0;
+  width: 2rem;
+  height: 4px;
+  background: var(--accent-color);
+}
+
+.date-graduation {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.graduations-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem 0;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+.graduations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
