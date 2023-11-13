@@ -1,21 +1,13 @@
-import { Link, animateScroll as scroll } from "react-scroll";
-import logo from "../assets/logo-portfolio.svg";
+import { Link } from "react-scroll";
 
-function NavBar() {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+import arrowup from "../assets/arrow-up.svg";
+import arrowdown from "../assets/arrow-down.svg";
+
+function VerticalNavbar() {
   return (
-    <div className="navigation">
-      <div>
-        <img
-          src={logo}
-          alt="Logo lien accueil"
-          onClick={scrollToTop}
-          className="nav-logo"
-        />
-      </div>
-      <div className="nav-links">
+    <div className="vertical-nav">
+      <img src={arrowup} alt="fleche haut" className="arrows" />
+      <div className="dot-container">
         <Link
           activeClass="active"
           to="section1"
@@ -23,9 +15,8 @@ function NavBar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="nav-link"
         >
-          Accueil
+          <span className="dot"> </span>
         </Link>
         <Link
           activeClass="active"
@@ -34,9 +25,8 @@ function NavBar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="nav-link"
         >
-          A propos
+          <span className="dot"> </span>
         </Link>
         <Link
           activeClass="active"
@@ -45,9 +35,8 @@ function NavBar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="nav-link"
         >
-          Compétences
+          <span className="dot"> </span>
         </Link>
         <Link
           activeClass="active"
@@ -56,9 +45,8 @@ function NavBar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="nav-link"
         >
-          Projets
+          <span className="dot"> </span>
         </Link>
         <Link
           activeClass="active"
@@ -67,13 +55,13 @@ function NavBar() {
           smooth={true}
           offset={-70}
           duration={500}
-          className="nav-link"
         >
-          Contacts
+          <span className="dot"> </span>
         </Link>
       </div>
+      <img src={arrowdown} alt="fleche bas" className="arrows" />
     </div>
   );
 }
 
-export default NavBar;
+export default VerticalNavbar;
