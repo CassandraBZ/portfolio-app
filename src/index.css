@@ -28,6 +28,13 @@ body {
   padding: 0;
 }
 
+hr {
+  border: 0;
+  height: 4px;
+  background: var(--white);
+  width: 100%;
+}
+
 .nav-link {
   font-weight: 500;
   color: var(--white);
@@ -176,7 +183,7 @@ h3 {
   flex-direction: column;
 }
 
-hr {
+.line-grade {
   border: 0;
   width: 2rem;
   height: 4px;
@@ -202,4 +209,51 @@ hr {
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+}
+
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 4rem 4rem 8rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin: 1rem 0;
+}
+
+.skills {
+  border: 4px solid var(--white);
+  border-radius: 1rem;
+  width: 30rem;
+}
+
+.skill-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.skill-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  margin: 0.7rem;
+}
+
+.dot-skills {
+  height: 17px;
+  width: 17px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.skills-list {
+  margin: 2rem 3rem;
 }
