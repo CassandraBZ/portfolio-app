@@ -17,22 +17,22 @@ function About() {
         <div className="graduations-container">
           <div className="graduations">
             <p className="date-graduation">2012-2015</p>
-            <hr />
+            <hr className="line-grade" />
             <p>Licence psychologie</p>
           </div>
           <div className="graduations">
             <p className="date-graduation">2015-2017</p>
-            <hr />
+            <hr className="line-grade" />
             <p>Maîtrise psychologie</p>
           </div>
           <div className="graduations">
             <p className="date-graduation">2019-2020</p>
-            <hr />
+            <hr className="line-grade" />
             <p>Formation UX design</p>
           </div>
           <div className="graduations">
             <p className="date-graduation">2022-2023</p>
-            <hr />
+            <hr className="line-grade" />
             <p>Formation web développeuse</p>
           </div>
         </div>
