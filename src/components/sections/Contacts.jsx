@@ -1,6 +1,8 @@
 import linkedin from "../../assets/linkedin-icon.svg";
 import github from "../../assets/github-icon.svg";
 
+import "../../assets/css/Contact.css";
+
 function Contacts() {
   return (
     <div className="contact-section">

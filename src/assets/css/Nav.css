@@ -11,11 +11,11 @@
 
   backdrop-filter: blur(12px);
   z-index: 1;
+  padding: 0 2rem;
 }
 
 .nav-logo {
   width: clamp(7rem, 15vw, 8.5rem);
-  margin-left: 2rem;
 }
 
 .nav-links {
@@ -90,9 +90,6 @@
 
   .nav-burger {
     display: block;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
   }
 
   .nav-burger:hover {
