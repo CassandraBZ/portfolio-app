@@ -15,12 +15,12 @@
   --accent-font: "Praise", cursive;
 
   background-color: #472d54;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -33,35 +33,6 @@ hr {
   height: 4px;
   background: var(--white);
   width: 100%;
-}
-
-.nav-link {
-  font-weight: 500;
-  color: var(--white);
-  text-decoration: inherit;
-  cursor: pointer;
-}
-
-.nav-link {
-  position: relative;
-}
-
-.nav-link:after {
-  background: var(--accent-color);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  bottom: -10px;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-in-out;
-}
-
-.nav-link:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 h1 {
@@ -81,39 +52,6 @@ h3 {
   font-weight: 800;
   margin: 0;
   padding: 0;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 6.5rem;
-  font-family: var(--font-lilita);
-  font-size: 1.2rem;
-  position: fixed;
-
-  backdrop-filter: blur(12px);
-  width: 100%;
-}
-
-.nav-logo {
-  width: clamp(7rem, 15vw, 8.5rem);
-  margin-left: 2rem;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
-  padding-right: 3rem;
-  height: 100%;
-}
-
-.nav-links > .active {
-  border-bottom: 5px solid var(--accent-color);
 }
 
 .home-section {

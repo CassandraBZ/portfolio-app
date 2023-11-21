@@ -50,7 +50,7 @@ function VerticalNavbar() {
         </Link>
         <Link
           activeClass="active"
-          to="section4"
+          to="section5"
           spy={true}
           smooth={true}
           offset={-70}
