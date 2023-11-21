@@ -1,5 +1,7 @@
 import homeimg from "../../assets/homeimg.png";
 
+import "../../assets/css/About.css";
+
 function About() {
   const text =
     "Après 4 ans à étudier la psychologie de la santé, je suis devenue UX/UI Designer en freelance pendant un peu plus d’un an. Ayant toujours soif d’apprendre je me suis lancée par la suite dans le développement web !";

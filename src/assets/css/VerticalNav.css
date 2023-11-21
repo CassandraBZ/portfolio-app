@@ -25,7 +25,7 @@
   cursor: pointer;
 }
 
-.dot-container > .active {
+.dot-link.active .dot {
   background-color: var(--accent-color);
 }
 

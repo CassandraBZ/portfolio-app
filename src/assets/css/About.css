@@ -1,0 +1,65 @@
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 4rem 4rem 8rem;
+}
+
+.about-description {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-grade {
+  border: 0;
+  width: 2rem;
+  height: 4px;
+  background: var(--accent-color);
+}
+
+.date-graduation {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.graduations-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem 0;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+.graduations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    margin: 4rem 2rem;
+  }
+
+  .about-description {
+    padding: 0;
+  }
+
+  .about-text {
+    margin: 2rem 0;
+  }
+
+  .graduations-container {
+    max-width: 100%;
+  }
+}
