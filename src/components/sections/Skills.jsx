@@ -1,3 +1,5 @@
+import "../../assets/css/Skills.css";
+
 function Skills() {
   return (
     <div className="skill-section">
