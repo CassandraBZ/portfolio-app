@@ -1,5 +1,7 @@
 import homeimg from "../../assets/homeimg.png";
 
+import "../../assets/css/Home.css";
+
 function Home() {
   return (
     <div className="home-section">
