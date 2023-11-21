@@ -1,0 +1,34 @@
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  margin-left: 1rem;
+  margin-top: 12rem;
+}
+
+.dot-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 0.5rem;
+}
+
+.dot {
+  height: 17px;
+  width: 17px;
+  background-color: var(--dot-color);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot-container > .active {
+  background-color: var(--accent-color);
+}
+
+.arrows {
+  width: 1rem;
+}
