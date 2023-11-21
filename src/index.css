@@ -300,3 +300,23 @@ h3 {
 .content:hover {
   opacity: 1;
 }
+
+.contact-section {
+  background: var(--light-background);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 4rem 4rem 8rem;
+}
+
+.contact-content {
+  padding: 4rem 4rem 4rem 8rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
