@@ -3,6 +3,7 @@ import oniriq from "../../assets/Oniriq-project.jpg";
 import notes from "../../assets/Notes-project.jpg";
 import hackathon from "../../assets/Hackathon-project.jpg";
 
+import "../../assets/css/Project.css";
 function Projects() {
   return (
     <div className="projects-section">
