@@ -6,7 +6,7 @@ import "../../assets/css/Contact.css";
 function Contacts() {
   return (
     <div className="contact-section">
-      <h1>On reste en contact ?</h1>
+      <h1 className="contact-title">On reste en contact ?</h1>
       <div className="contact-content">
         <p>
           Vous pouvez m’écrire par email à l’adresse :
