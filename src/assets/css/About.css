@@ -17,6 +17,58 @@
   flex-direction: column;
 }
 
+.wrapper-text {
+  box-sizing: border-box;
+  height: 70px;
+  display: flex;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  margin left: 0.7rem;
+  animation : spin_word 8s infinite;
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+.animation {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 0.7rem;
+  height: 5rem;
+  overflow: hidden;
+
+} 
+
+@keyframes spin_word {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+
 .line-grade {
   border: 0;
   width: 2rem;
