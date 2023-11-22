@@ -10,7 +10,10 @@ import "../../assets/css/Project.css";
 function Projects() {
   return (
     <div className="projects-section">
-      <h1 className="project-title">Mes projets</h1>
+      <h1 className="project-title outline">Mes projets</h1>
+      <p className="info-project">
+        Appuyez pour avoir plus d{"'"}informations sur un projet
+      </p>
       <div className="projects-illustrations">
         <ProjectCard
           imageSrc={portfolio}

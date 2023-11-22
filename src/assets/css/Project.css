@@ -45,6 +45,10 @@
   opacity: 1;
 }
 
+.info-project {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .projects-section {
     margin: 4rem;
@@ -56,5 +60,17 @@
 
   .img {
     width: 100%;
+  }
+}
+
+@media (hover: none) {
+  .content.show {
+    opacity: 1;
+  }
+
+  .info-project {
+    display: block;
+    color: var(--accent-color);
+    padding-bottom: 1rem;
   }
 }

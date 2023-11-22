@@ -1,12 +1,19 @@
 import Proptypes from "prop-types";
+import { useState } from "react";
 
 function ProjectCard({ imageSrc, altText, title, description, technologies }) {
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+    setShow(!show);
+  };
+
   return (
-    <div className="wrapper">
+    <div className="wrapper" onClick={handleShow}>
       <div className="image">
         <img src={imageSrc} alt={altText} className="img" />
       </div>
-      <div className="content">
+      <div className={`content ${show ? "show" : ""}`}>
         <h3>{title}</h3>
         <p>{description}</p>
         <p>{technologies}</p>
