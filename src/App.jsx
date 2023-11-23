@@ -7,10 +7,12 @@ import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
 import Contacts from "./components/sections/Contacts";
 import VerticalNavbar from "./components/VerticalNavbar";
+import Cursor from "./components/Cursor";
 
 function App() {
   return (
     <>
+      <Cursor />
       <NavBar />
       <VerticalNavbar />
       <Element name="section1" className="element">

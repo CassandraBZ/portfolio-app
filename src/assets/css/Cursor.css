@@ -1,0 +1,21 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  top: 0;
+  left: 0;
+  position: fixed;
+  // filter: blur(5.199999809265137px);
+  border-radius: 50%;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.expand {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
