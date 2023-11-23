@@ -33,6 +33,7 @@
 
 .nav-link {
   padding: 0 0.3rem;
+  cursor: pointer;
 }
 
 .nav-burger {

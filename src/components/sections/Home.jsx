@@ -1,4 +1,4 @@
-import homeimg from "../../assets/homeimg.png";
+import homeimg from "../../assets/Illustration_Portfolio.png";
 
 import "../../assets/css/Home.css";
 
@@ -14,8 +14,8 @@ function Home() {
           Web développeuse <span className="accent-text">&</span> Designer
         </h2>
       </div>
-      <div className="home-img">
-        <img src={homeimg} alt="home" />
+      <div>
+        <img src={homeimg} alt="home" className="home-img" />
       </div>
     </div>
   );

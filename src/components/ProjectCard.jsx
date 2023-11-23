@@ -15,7 +15,7 @@ function ProjectCard({ imageSrc, altText, title, description, technologies }) {
       </div>
       <div className={`content ${show ? "show" : ""}`}>
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p className="description">{description}</p>
         <p>{technologies}</p>
       </div>
     </div>
