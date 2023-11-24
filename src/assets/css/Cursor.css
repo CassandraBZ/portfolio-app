@@ -5,7 +5,6 @@
   top: 0;
   left: 0;
   position: fixed;
-  // filter: blur(5.199999809265137px);
   border-radius: 50%;
   transition-duration: 150ms;
   transition-timing-function: ease-out;
