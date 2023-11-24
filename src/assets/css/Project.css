@@ -58,7 +58,7 @@
 
 @media (max-width: 768px) {
   .projects-section {
-    margin: 3rem;
+    margin: 0 3rem 5rem 3rem;
   }
 
   .content h3 {

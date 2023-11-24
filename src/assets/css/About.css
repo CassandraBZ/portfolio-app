@@ -102,10 +102,16 @@
 
 @media (max-width: 768px) {
   .about-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 3rem 0;
     height: 100%;
   }
+
+  .about-illustration {
+    width: 250px;
+    margin: 3rem 0;
+  }
+
 
   .about-description {
     padding: 0;
