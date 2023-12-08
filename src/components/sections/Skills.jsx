@@ -1,7 +1,9 @@
+import "../../assets/css/Skills.css";
+
 function Skills() {
   return (
     <div className="skill-section">
-      <h1>Ce que je sais faire</h1>
+      <h1 className="outline">Ce que je sais faire</h1>
       <div className="skills-container">
         <div className="skills">
           <div className="skill-title-container">

@@ -1,0 +1,135 @@
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4rem;
+  height: 100vh;
+  padding: 0 4rem;
+}
+
+.about-description {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-text {
+  box-sizing: border-box;
+  height: 70px;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  margin left: 0.7rem;
+  animation : spin_word 8s infinite;
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+.animation {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 0.7rem;
+  height: 5rem;
+  overflow: hidden;
+
+} 
+
+@keyframes spin_word {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+
+.line-grade {
+  border: 0;
+  width: 2rem;
+  height: 4px;
+  background: var(--accent-color);
+}
+
+.date-graduation {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.graduations-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 3rem;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+.graduations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column-reverse;
+    margin: 3rem 0;
+    height: 100%;
+  }
+
+  .about-illustration {
+    width: 250px;
+    margin: 3rem 0;
+  }
+
+
+  .about-description {
+    padding: 0;
+  }
+
+  .about-text {
+    margin-top: 3rem;
+  } 
+  
+  .about-text p {
+    margin-top: 5rem;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .graduations-container {
+    max-width: 100%;
+  }
+}

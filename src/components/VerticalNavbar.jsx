@@ -3,6 +3,8 @@ import { Link } from "react-scroll";
 import arrowup from "../assets/arrow-up.svg";
 import arrowdown from "../assets/arrow-down.svg";
 
+import "../assets/css/VerticalNav.css";
+
 function VerticalNavbar() {
   return (
     <div className="vertical-nav">
@@ -15,6 +17,7 @@ function VerticalNavbar() {
           smooth={true}
           offset={-70}
           duration={500}
+          className="dot-link"
         >
           <span className="dot"> </span>
         </Link>
@@ -25,6 +28,7 @@ function VerticalNavbar() {
           smooth={true}
           offset={-70}
           duration={500}
+          className="dot-link"
         >
           <span className="dot"> </span>
         </Link>
@@ -35,6 +39,7 @@ function VerticalNavbar() {
           smooth={true}
           offset={-70}
           duration={500}
+          className="dot-link"
         >
           <span className="dot"> </span>
         </Link>
@@ -45,16 +50,18 @@ function VerticalNavbar() {
           smooth={true}
           offset={-70}
           duration={500}
+          className="dot-link"
         >
           <span className="dot"> </span>
         </Link>
         <Link
           activeClass="active"
-          to="section4"
+          to="section5"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
+          className="dot-link"
         >
           <span className="dot"> </span>
         </Link>
