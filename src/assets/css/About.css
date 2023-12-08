@@ -29,8 +29,8 @@
 .word {
   display: block;
   height: 100%;
-  margin left: 0.7rem;
-  animation : spin_word 8s infinite;
+  margin-left: 0.7rem;
+  animation: spin_word 8s infinite;
   font-style: italic;
   color: var(--accent-color);
 }
@@ -41,8 +41,7 @@
   margin-left: 0.7rem;
   height: 5rem;
   overflow: hidden;
-
-} 
+}
 
 @keyframes spin_word {
   10% {
@@ -70,7 +69,6 @@
     transform: translateY(-400%);
   }
 }
-
 
 .line-grade {
   border: 0;
@@ -112,15 +110,14 @@
     margin: 3rem 0;
   }
 
-
   .about-description {
     padding: 0;
   }
 
   .about-text {
     margin-top: 3rem;
-  } 
-  
+  }
+
   .about-text p {
     margin-top: 5rem;
   }
